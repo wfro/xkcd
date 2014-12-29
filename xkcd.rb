@@ -1,6 +1,6 @@
 require 'csv'
 
-class Menu
+class MenuSolver
   attr_reader :price, :menu, :orders
 
   def initialize(price, menu)

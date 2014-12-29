@@ -11,7 +11,7 @@ class XKCDTest < Minitest::Test
 
   def test_it_finds_correct_orders_for_menu_txt
     price, menu = Parser.parse_menu("menu.txt")
-    menu = Menu.new(price, menu)
+    menu = MenuSolver.new(price, menu)
     expected = [["mixed fruit", "mixed fruit", "mixed fruit", "mixed fruit", "mixed fruit", "mixed fruit", "mixed fruit"],
                 ["mixed fruit", "hot wings", "hot wings", "sampler plate"]]
     menu.possible_orders.each { |order| assert_includes expected, order }
@@ -25,7 +25,7 @@ class XKCDTest < Minitest::Test
       "salad" => 335,
     }
 
-    menu = Menu.new(price, menu)
+    menu = MenuSolver.new(price, menu)
     expected = [["fruit", "fries", "salad"], ["fries", "fries", "fries"]]
     menu.possible_orders.each { |order| assert_includes expected, order }
   end
@@ -38,7 +38,7 @@ class XKCDTest < Minitest::Test
       "foie gras" => 1000
     }
 
-    menu = Menu.new(price, menu)
+    menu = MenuSolver.new(price, menu)
     assert_equal "No solutions found", menu.possible_orders
   end
 end
