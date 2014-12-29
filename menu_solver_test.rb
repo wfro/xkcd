@@ -1,8 +1,9 @@
 require 'minitest/autorun'
 require 'minitest/pride'
-require_relative 'xkcd'
+require_relative 'menu_solver'
+require_relative 'parser'
 
-class XKCDTest < Minitest::Test
+class MenuSolverTest < Minitest::Test
   def test_it_parses_example_menu_file
     price, menu = Parser.parse_menu("menu.txt")
     assert_equal 1505, price
