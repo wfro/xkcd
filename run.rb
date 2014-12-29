@@ -1,4 +1,6 @@
 require_relative "menu_solver"
+require_relative "parser"
+
 # Pass run_xkcd.rb to the ruby interpreter, optionally specifying a filename (defaults to menu.txt)
 # ex.
 #   $ ruby run_xkcd.rb another_menu.txt
