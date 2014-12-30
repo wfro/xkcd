@@ -1,6 +1,6 @@
-Inspired by [xkcd #287](http://xkcd.com/287/)
+Inspired by [xkcd #287](http://xkcd.com/287/).
 
-To run:
+To run (`Parser` will use `menu.txt` by default):
 
 ```shell
 git clone git@github.com:wfro/xkcd.git
