@@ -1,4 +1,4 @@
-Inspired by [xkcd](http://xkcd.com/287/)
+Inspired by [xkcd #287](http://xkcd.com/287/)
 
 To run:
 
@@ -12,4 +12,10 @@ You can optionally pass another file to the ruby interpreter (use absolute filep
 
 ```shell
 ruby run.rb another_menu.txt
+```
+
+If you'd like to run tests (using Minitest):
+
+```shell
+ruby menu_solver_test.rb
 ```
