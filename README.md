@@ -1,4 +1,4 @@
-See the exercise at [xkcd](http://xkcd.com/287/)
+Inspired by [xkcd](http://xkcd.com/287/)
 
 To run:
 
